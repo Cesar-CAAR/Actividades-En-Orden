@@ -1,0 +1,109 @@
+<router-outlet />
+
+<app-tarjeta-producto></app-tarjeta-producto>
+
+<section>
+    <div class="container">
+    <h1 class="text-center text-warning">{{ titulo }}</h1>
+    <p>Bienvenido, {{ usuario.nombre }}. </p>
+    <p>Tienes {{ usuario.edad }} años.</p>
+    <p>{{ saludar() }}</p>
+    <p>En un año tendrás {{usuario.edad + 1}} años.</p>
+    </div>
+</section>
+
+
+<section>
+    <div class="container text-center">
+    <h1 class="text-center text-warning">{{ titulo }}</h1>
+    <app-padre/>
+    </div>
+</section>
+
+
+<section>
+    <div class="container text-center">
+        <h1 class="text-center text-warning">{{ titulo }}</h1>
+        <app-listado-producto-padre/>
+    </div>
+</section>
+
+
+<section>
+    <div class="container text-center">
+        <app-componete-hijo></app-componete-hijo>
+        <app-componente-padre></app-componente-padre>
+    </div>
+</section>
+
+
+<section>
+    <div class="container text-center">
+        <h1 class="text-center text-warning my-4">{{ titulo_1 }}</h1>
+        <app-mostrar-mensaje/>
+    </div>
+</section>
+
+
+<section>
+    <div class="container text-center">
+        <h1 class="text-center text-warning my-4">{{ titulo }}</h1>
+        <app-replicador />
+    </div>
+</section>
+
+
+<section>
+    <div class="container text-center">
+        <h1 class="text-center text-warning my-4">{{ titulo }}</h1>
+        <app-replicador-2 />
+    </div>
+</section>
+
+
+<section>
+    <div class="container text-center">
+        <h1 class="text-center text-warning my-4">{{ titulo }}</h1>
+        <app-saludar />
+    </div>
+</section>
+
+
+<section>
+    <div class="container text-center">
+        <h1 class="text-center text-warning my-4">{{ titulo_2 }}</h1>
+        <app-componente-if />
+    </div>
+</section>
+
+
+<section>
+    <div class="container text-center">
+        <h1 class="text-center text-warning my-4">{{ titulo_3 }}</h1>
+        <app-agregar-tarea />
+    </div>
+</section>
+
+
+<section>
+    <div class="container text-center">
+        <h1 class="text-center text-warning my-4">{{ titulo_4 }}</h1>
+        <app-componente-for />
+    </div>
+</section>
+
+
+<section>
+    <div class="container text-center">
+        <h1 class="text-center text-warning my-4">{{ titulo_5 }}</h1>
+        <app-listado-productos />
+    </div>
+</section>
+
+
+<section>
+    <div class="container text-center">
+        <h1 class="text-center text-warning my-4">{{ titulo_5 }}</h1>
+        <app-hijo />
+    </div>
+</section>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <h2>Estatus de Autenticación</h2>
+        @if (isAutenticado)
+        {
+            <p class="text-success">Estás autenticado</p>
+        } 
+        @else 
+        {
+            <p class="text-danger">No estás autenticado</p>
+        }
+        <button class="btn btn-primary mt-3" (click)="alternarAutenticacion()">
+            Alternar Estado de Autenticación
+        </button>
+    </div>
+</body>
+</html>
