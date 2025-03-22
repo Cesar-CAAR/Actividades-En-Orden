@@ -13,7 +13,7 @@ import { ComponenteIfComponent } from './17_Directiva_if/componente-if/component
 import { AgregarTareaComponent } from './18_LocalReference/agregar-tarea/agregar-tarea.component';
 import { ComponenteForComponent } from './19_Directiva_for/componente-for/componente-for.component';
 import { ListadoProductosComponent } from './20_RetoListadoProductos/listado-productos/listado-productos.component';
-import { HijoComponent } from './21_DecoradorInput/hijo/hijo.component';
+import { Padre21Component } from './21_DecoradorInput/padre21/padre21.component';
 
 @Component({
   selector: 'app-root',
@@ -32,7 +32,7 @@ import { HijoComponent } from './21_DecoradorInput/hijo/hijo.component';
     AgregarTareaComponent,
     ComponenteForComponent,
     ListadoProductosComponent,
-    HijoComponent    
+    Padre21Component 
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -58,6 +58,6 @@ export class AppComponent {
   titulo_3 = 'Local Reference en Angular';
 
   titulo_4 = 'Directiva @for en Angular';
-
-  titulo_5 = 'Tienda Online';
+  
+  titulo_5 = 'Directiva @Input en Angular';
 }
