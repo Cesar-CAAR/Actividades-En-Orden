@@ -14,6 +14,7 @@ import { AgregarTareaComponent } from './18_LocalReference/agregar-tarea/agregar
 import { ComponenteForComponent } from './19_Directiva_for/componente-for/componente-for.component';
 import { ListadoProductosComponent } from './20_RetoListadoProductos/listado-productos/listado-productos.component';
 import { Padre21Component } from './21_DecoradorInput/padre21/padre21.component';
+import { Padre22Component } from './22_DecoradorOutput/padre22/padre22.component';
 
 @Component({
   selector: 'app-root',
@@ -32,7 +33,8 @@ import { Padre21Component } from './21_DecoradorInput/padre21/padre21.component'
     AgregarTareaComponent,
     ComponenteForComponent,
     ListadoProductosComponent,
-    Padre21Component 
+    Padre21Component,
+    Padre22Component
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -60,4 +62,6 @@ export class AppComponent {
   titulo_4 = 'Directiva @for en Angular';
   
   titulo_5 = 'Directiva @Input en Angular';
+
+  titulo_6 = 'Directiva @Output en Angular';
 }
