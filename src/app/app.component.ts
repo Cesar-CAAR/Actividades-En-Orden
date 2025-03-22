@@ -17,6 +17,7 @@ import { Padre21Component } from './21_DecoradorInput/padre21/padre21.component'
 import { Padre22Component } from './22_DecoradorOutput/padre22/padre22.component';
 import { CalculadoraPadre231Component } from './23_CalculadoraOutputInput/Calculadora_Output/calculadora-padre23-1/calculadora-padre23-1.component';
 import { CalculadoraPadre232Component } from './23_CalculadoraOutputInput/Calculadora_Input/calculadora-padre23-2/calculadora-padre23-2.component';
+import { ComponentePadre24Component } from './24_DecoradorViewChild/componente-padre-24/componente-padre-24.component';
 
 @Component({
   selector: 'app-root',
@@ -38,7 +39,8 @@ import { CalculadoraPadre232Component } from './23_CalculadoraOutputInput/Calcul
     Padre21Component,
     Padre22Component,
     CalculadoraPadre231Component,
-    CalculadoraPadre232Component
+    CalculadoraPadre232Component,
+    ComponentePadre24Component
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -70,4 +72,8 @@ export class AppComponent {
   titulo_6 = 'Directiva @Output en Angular';
 
   titulo_7 = 'Calculadora con Output en Angular';
+
+  titulo_8 = 'Calculadora con Input en Angular';
+
+  titulo_9 = 'Decorador @ViewChild en Angular';
 }
