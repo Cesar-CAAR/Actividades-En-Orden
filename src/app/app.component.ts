@@ -18,9 +18,11 @@ import { Padre22Component } from './22_DecoradorOutput/padre22/padre22.component
 import { CalculadoraPadre231Component } from './23_CalculadoraOutputInput/Calculadora_Output/calculadora-padre23-1/calculadora-padre23-1.component';
 import { CalculadoraPadre232Component } from './23_CalculadoraOutputInput/Calculadora_Input/calculadora-padre23-2/calculadora-padre23-2.component';
 import { ComponentePadre24Component } from './24_DecoradorViewChild/componente-padre-24/componente-padre-24.component';
+import { Mensaje25Service } from './25_Servicios/servicio/mensaje-25.service';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [
     RouterOutlet,
     TarjetaProductoComponent,
@@ -40,7 +42,7 @@ import { ComponentePadre24Component } from './24_DecoradorViewChild/componente-p
     Padre22Component,
     CalculadoraPadre231Component,
     CalculadoraPadre232Component,
-    ComponentePadre24Component
+    ComponentePadre24Component,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -76,4 +78,27 @@ export class AppComponent {
   titulo_8 = 'Calculadora con Input en Angular';
 
   titulo_9 = 'Decorador @ViewChild en Angular';
+
+
+
+  // Esto es para incluir el servicio
+
+  titulo_10 = 'Servicios en Angular';
+  
+  mensaje_25 !: string;
+
+  constructor(privateMensaje25Service: Mensaje25Service) {
+       this.mensaje_25 = privateMensaje25Service.obtenerMensaje();
+  }
+
+  // Esto es para incluir el servicio
+
+
+
+
+
+
+
+
+
 }
