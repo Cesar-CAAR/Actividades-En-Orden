@@ -19,6 +19,7 @@ import { CalculadoraPadre231Component } from './23_CalculadoraOutputInput/Calcul
 import { CalculadoraPadre232Component } from './23_CalculadoraOutputInput/Calculadora_Input/calculadora-padre23-2/calculadora-padre23-2.component';
 import { ComponentePadre24Component } from './24_DecoradorViewChild/componente-padre-24/componente-padre-24.component';
 import { Mensaje25Service } from './25_Servicios/servicio/mensaje-25.service';
+import { ListadoUsuarios26Component } from './26_ServiciosObservables/componentes/listado-usuarios-26/listado-usuarios-26.component';
 
 @Component({
   selector: 'app-root',
@@ -43,6 +44,7 @@ import { Mensaje25Service } from './25_Servicios/servicio/mensaje-25.service';
     CalculadoraPadre231Component,
     CalculadoraPadre232Component,
     ComponentePadre24Component,
+    ListadoUsuarios26Component
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -96,7 +98,7 @@ export class AppComponent {
 
 
 
-
+  titulo_11 = 'Servicios con Observables en Angular';
 
 
 
